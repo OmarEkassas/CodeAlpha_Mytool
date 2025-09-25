@@ -1,4 +1,4 @@
-# quick-bugtool
+# Mytool
 
 **Quick prototype static scanner** — a single-file, regex-based tool to find common insecure patterns in source code.  
 Designed as a fast submission artifact you can run locally and upload to GitHub.
@@ -7,7 +7,7 @@ Designed as a fast submission artifact you can run locally and upload to GitHub.
 
 ## What this project contains
 
-- `quick_bugtool.py` — the scanner script (single-file prototype).
+- `Mytool.py` — the scanner script (single-file prototype).
 - `targets/` — (optional) example target files (e.g., `targets/sampleapp/vuln.py`).
 - `out/` — output folder produced after scanning:
   - `out/findings.json` — machine-readable findings (JSON array).
@@ -19,7 +19,7 @@ Designed as a fast submission artifact you can run locally and upload to GitHub.
 
 ## Purpose / Scope
 
-`quick-bugtool` is a **lightweight prototype** for detecting insecure code patterns (examples: `eval()`, `subprocess(..., shell=True)`, hardcoded secrets, weak hashing). It is:
+`Mytool` is a **lightweight prototype** for detecting insecure code patterns (examples: `eval()`, `subprocess(..., shell=True)`, hardcoded secrets, weak hashing). It is:
 
 - **Fast** and easy to run locally.
 - **Passive**: only scans files on disk (no network/DAST scanning).
@@ -35,4 +35,4 @@ Designed as a fast submission artifact you can run locally and upload to GitHub.
 ### Run scanner
 ```bash
 # from project root
-python3 quick_bugtool.py /path/to/target --out out
+python3 Mytool.py /path/to/target --out out
