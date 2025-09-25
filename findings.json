@@ -1,0 +1,12 @@
+[
+  {
+    "tool": "quick_bugtool",
+    "rule": "eval_usage",
+    "description": "Use of eval() - dynamic code execution risk",
+    "file": "vuln.py",
+    "line": 3,
+    "snippet": "eval(user_input)   # unsafe: should be flagged",
+    "severity": "high",
+    "cwe": "CWE-94"
+  }
+]

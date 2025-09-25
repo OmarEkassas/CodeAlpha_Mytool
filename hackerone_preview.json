@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Automated: eval_usage in vuln.py:3",
+    "vulnerability_information": "Use of eval() - dynamic code execution risk",
+    "weakness": "CWE-94",
+    "impact": "Potential security impact; verify in context.",
+    "steps_to_reproduce": "File: vuln.py\nLine: 3\nSeverity: high\nSnippet:\neval(user_input)   # unsafe: should be flagged\n\nDescription: Use of eval() - dynamic code execution risk"
+  }
+]
